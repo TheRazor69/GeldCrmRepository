@@ -1,4 +1,7 @@
 <?php
-mysql_connect("http://geldcrm.gear.host") or die("mysql connection is failure.");
+$servername = "http://geldcrm.gear.host";
+$username = "geldcrmdb";
+$password = "GeldCrm123456789!";
+mysql_connect($servername, $username, $password) or die("my life is a failure");
 mysql_select_db("hermeslogin") or die("Database does not exists.");
 ?>
